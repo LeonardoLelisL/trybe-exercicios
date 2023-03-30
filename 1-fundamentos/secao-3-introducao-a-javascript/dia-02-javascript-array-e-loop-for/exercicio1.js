@@ -7,7 +7,7 @@ let smallestNumber = numbers[0];
 for (let index = 0; index < numbers.length; index += 1) {
   console.log(numbers[index]);
 
-  sum = sum + numbers[index];
+  sum += numbers[index];
 
   if (numbers[index] > higherNumber) {
     higherNumber = numbers[index];
