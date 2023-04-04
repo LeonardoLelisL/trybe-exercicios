@@ -101,3 +101,20 @@ function getValueByNumber(object, number) {
 }
 
 console.log(getValueByNumber(lesson1, 0));
+
+//Exercício 8
+
+console.log();
+console.log('Exercício 8');
+console.log();
+
+function verifyPair(object, key, value) {
+  for (let key1 in object) {
+    if (key1 === key){
+      return object[key1] === value;
+    }
+  }
+}
+
+console.log(verifyPair(lesson3, 'turno', 'noite'));
+console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
