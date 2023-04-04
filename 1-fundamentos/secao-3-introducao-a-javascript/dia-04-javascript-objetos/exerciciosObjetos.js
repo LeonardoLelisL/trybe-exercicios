@@ -23,4 +23,9 @@ leitor.livrosFavoritos.push(
     autor: 'JK Rowling',
     editora: 'Rocco',
   }
-)
+);
+
+//Exercício 3
+
+console.log();
+console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos')
