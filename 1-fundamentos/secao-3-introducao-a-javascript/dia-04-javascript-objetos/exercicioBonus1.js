@@ -63,3 +63,13 @@ function valueList(object) {
 }
 
 console.log(valueList(lesson3));
+
+//Exercício 5
+
+console.log();
+console.log('Exercício 5');
+console.log();
+
+let allLessons = Object.assign({}, lesson1 = {lesson1}, lesson2 = {lesson2}, lesson3 = {lesson3});
+
+console.log(allLessons);
