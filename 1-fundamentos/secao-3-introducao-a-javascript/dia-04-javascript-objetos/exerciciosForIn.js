@@ -20,3 +20,10 @@ console.log();
 for (let key in info){
   console.log(key);
 }
+
+//Exercício 4
+
+console.log();
+for (let key in info){
+  console.log(info[key]);
+}
