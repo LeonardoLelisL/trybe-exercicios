@@ -70,7 +70,7 @@ console.log();
 console.log('Exercício 5');
 console.log();
 
-let allLessons = Object.assign({}, lesson1 = {lesson1}, lesson2 = {lesson2}, lesson3 = {lesson3});
+let allLessons = Object.assign({}, lessonA = {lesson1}, lessonB = {lesson2}, lessonC = {lesson3});
 
 console.log(allLessons);
 
@@ -89,3 +89,15 @@ function numberOfStudents(object) {
 }
 
 console.log(numberOfStudents(allLessons));
+
+//Exercício 7
+
+console.log();
+console.log('Exercício 7');
+console.log();
+
+function getValueByNumber(object, number) {
+  return Object.values(object)[number];
+}
+
+console.log(getValueByNumber(lesson1, 0));
