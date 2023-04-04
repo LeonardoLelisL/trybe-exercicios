@@ -51,3 +51,15 @@ function objSize(object) {
 }
 
 console.log(objSize(lesson1));
+
+//Exercício 4
+
+console.log();
+console.log('Exercício 4');
+console.log();
+
+function valueList(object) {
+  return Object.values(object);    
+}
+
+console.log(valueList(lesson3));
