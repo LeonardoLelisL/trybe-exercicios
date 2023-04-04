@@ -30,11 +30,24 @@ console.log(lesson2);
 
 //Exercício 2
 
+console.log();
+console.log('Exercício 2');
+console.log();
+
 function keyList(object) {
   return Object.keys(object);    
 }
 
-console.log();
-console.log('Exercício 2');
-console.log();
 console.log(keyList(lesson2));
+
+//Exercício 3
+
+console.log();
+console.log('Exercício 3');
+console.log();
+
+function objSize(object) {
+  return Object.keys(object).length;
+}
+
+console.log(objSize(lesson1));
