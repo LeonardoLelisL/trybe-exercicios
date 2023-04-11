@@ -13,3 +13,7 @@ mainContent.appendChild(centerContent);
 const p = document.createElement('p');
 p.innerText = 'Algum texto.';
 centerContent.appendChild(p);
+
+const leftContent = document.createElement('section');
+leftContent.className = 'left-content';
+mainContent.appendChild(leftContent);
