@@ -9,3 +9,7 @@ document.body.appendChild(mainContent);
 const centerContent = document.createElement('section');
 centerContent.className = 'center-content';
 mainContent.appendChild(centerContent);
+
+const p = document.createElement('p');
+p.innerText = 'Algum texto.';
+centerContent.appendChild(p);
