@@ -51,3 +51,6 @@ for (let value of h3) {
 
 const sectionLeftContent = document.getElementsByClassName('left-content')[0];
 mainContent.removeChild(sectionLeftContent);
+
+const sectionRightContent = document.getElementsByClassName('right-content')[0];
+sectionRightContent.style.marginRight = 'auto';
