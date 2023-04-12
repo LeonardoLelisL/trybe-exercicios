@@ -38,7 +38,13 @@ rightContent.appendChild(ul);
 
 for (let index = 0; index < 3; index += 1) {
   const h3 = document.createElement('h3');
+  h3.innerText = index;
   mainContent.appendChild(h3);
 }
 
 h1.className = 'title';
+
+const h3 = document.getElementsByTagName('h3');
+for (let value of h3) {
+  value.className = 'description';
+}
