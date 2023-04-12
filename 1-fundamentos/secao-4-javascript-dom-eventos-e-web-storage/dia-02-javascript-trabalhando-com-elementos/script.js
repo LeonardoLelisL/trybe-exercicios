@@ -48,3 +48,6 @@ const h3 = document.getElementsByTagName('h3');
 for (let value of h3) {
   value.className = 'description';
 }
+
+const sectionLeftContent = document.getElementsByClassName('left-content')[0];
+mainContent.removeChild(sectionLeftContent);
