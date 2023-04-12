@@ -35,3 +35,8 @@ for (let value of number) {
   ul.appendChild(lista);
 }
 rightContent.appendChild(ul);
+
+for (let index = 0; index < 3; index += 1) {
+  const h3 = document.createElement('h3');
+  mainContent.appendChild(h3);
+}
