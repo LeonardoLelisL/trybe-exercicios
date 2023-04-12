@@ -57,3 +57,8 @@ sectionRightContent.style.marginRight = 'auto';
 
 const sectionCenterContent = document.getElementsByClassName('center-content')[0];
 sectionCenterContent.parentElement.style.backgroundColor = 'green';
+
+const listUl = document.getElementsByTagName('ul')[0];
+for (let index = 0; index < 2; index += 1) {
+  listUl.lastElementChild.remove();
+}
