@@ -54,3 +54,6 @@ mainContent.removeChild(sectionLeftContent);
 
 const sectionRightContent = document.getElementsByClassName('right-content')[0];
 sectionRightContent.style.marginRight = 'auto';
+
+const sectionCenterContent = document.getElementsByClassName('center-content')[0];
+sectionCenterContent.parentElement.style.backgroundColor = 'green';
