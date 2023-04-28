@@ -113,14 +113,27 @@ const findPersonByName = (name) => {
 
   catch (error) {
     return error.message;
-  }  
+  }
 };
 console.log(findPersonByName('Ana Santos'));
 console.log(findPersonByName('Joaozinho'));   
 
 const findPersonByPosition = (position) => {
   // seu código aqui
+  try {
+    const person = clients[position];
+    if (person) {
+      const client = `Cliente: ${person.name}`;
+      const email = `email: ${person.email}`;
+      return `${client}. ${email}`;
+    } else throw new Error('Posição inválida, tente novamente');
+  } catch (error) {
+    return error.message;
+  }
 };
+
+console.log(findPersonByPosition(0));
+console.log(findPersonByPosition(10));
 
 const findPeopleByState = (state) => {
   // seu código aqui
