@@ -137,4 +137,18 @@ console.log(findPersonByPosition(10));
 
 const findPeopleByState = (state) => {
   // seu código aqui
+  try {
+    const people = [];
+    for (let index = 0; index < clients.length; index += 1) {
+      if (clients[index].address.state === state) people.push(clients[index].name);
+    }
+    if (people.length === 0) throw new Error('Ops, nenhuma pessoa mora nesse estado, tente outro');
+
+    return people;
+  } catch (error) {
+    return error.message;
+  }
 };
+
+console.log(findPeopleByState('RJ'));
+console.log(findPeopleByState('ES'));
