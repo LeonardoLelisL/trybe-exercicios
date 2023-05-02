@@ -9,3 +9,5 @@ function myRemove(arr, item) {
   }
   return newArr;
 }
+
+module.exports = myRemove;
