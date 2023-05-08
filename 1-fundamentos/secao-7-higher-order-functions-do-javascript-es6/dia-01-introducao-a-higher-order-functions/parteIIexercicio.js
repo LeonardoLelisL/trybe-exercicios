@@ -67,3 +67,13 @@ const authorBornIn1947 = () => {
   return author.author.name;
 }
 console.log(authorBornIn1947());
+
+// const expectedResult = 'Duna';
+const smallerName = () => {
+  let nameBook;
+  books.forEach((item) => {
+    if (!nameBook || item.name.length < nameBook.length) nameBook = item.name;
+  });
+  return nameBook;
+}
+console.log(smallerName());
