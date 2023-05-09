@@ -93,3 +93,11 @@ const getNamedBook = () => {
   return books.find((element) => element.name.length === 26);
 }
 console.log(getNamedBook());
+
+// const expectedResult = false;
+
+const everyoneWasBornOnSecXX = () => {
+  return books.every((book) => book.author.birthYear > 1900 && book.author.birthYear < 2001);
+}
+
+console.log(everyoneWasBornOnSecXX());
