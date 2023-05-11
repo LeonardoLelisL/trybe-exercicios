@@ -73,3 +73,18 @@ const averageAge = () => books.map((book) =>
   book.releaseYear - book.author.birthYear).reduce((totalAge, age) =>
   totalAge + age) / books.length;
 console.log(averageAge());
+
+// const expectedResult = {
+//   id: 1,
+//   name: 'As Crônicas de Gelo e Fogo',
+//   genre: 'Fantasia',
+//   author: {
+//     name: 'George R. R. Martin',
+//     birthYear: 1948,
+//   },
+//   releaseYear: 1991,
+// };
+
+const longestNamedBook = () => books.reduce((biggestBook, book) =>
+  biggestBook.name.length > book.name.length ? biggestBook : book);
+console.log(longestNamedBook());
