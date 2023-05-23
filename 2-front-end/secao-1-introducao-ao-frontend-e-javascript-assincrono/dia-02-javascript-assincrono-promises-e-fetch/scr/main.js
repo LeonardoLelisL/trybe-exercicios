@@ -19,5 +19,11 @@ button.addEventListener('click', (event) => {
   .then((data) => {
     img.src = data.image.url;
     name.innerHTML = data.name;
-  });
+  })
+  .catch((error) => Swal.fire({
+    title: 'Hero not found',
+    text: error.message,
+    icon: 'error',
+    confirmButtonText: 'Cool',
+  }));
 });
