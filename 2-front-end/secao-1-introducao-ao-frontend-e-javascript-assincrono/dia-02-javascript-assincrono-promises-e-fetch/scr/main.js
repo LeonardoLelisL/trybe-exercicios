@@ -15,15 +15,15 @@ button.addEventListener('click', (event) => {
   const id = randomId();
 
   fetch(`${BASE_URL}/${id}`)
-  .then((result) => result.json())
-  .then((data) => {
-    img.src = data.image.url;
-    name.innerHTML = data.name;
-  })
-  .catch((error) => Swal.fire({
-    title: 'Hero not found',
-    text: error.message,
-    icon: 'error',
-    confirmButtonText: 'Cool',
-  }));
+    .then((result) => result.json())
+    .then((data) => {
+      img.src = data.image.url;
+      name.innerHTML = data.name;
+    })
+    .catch((error) => Swal.fire({
+      title: 'Hero not found',
+      text: error.message,
+      icon: 'error',
+      confirmButtonText: 'Cool',
+    }));
 });
