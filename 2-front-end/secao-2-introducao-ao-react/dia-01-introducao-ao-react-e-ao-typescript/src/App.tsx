@@ -1,8 +1,11 @@
 import './App.css';
+import HelloWorld from './components/hello-world';
 
 function App() {
   return (
-    <div>Work in progress</div>
+    <div className="App">
+      <HelloWorld />
+    </div>
   );
 }
 
